@@ -1,81 +1,144 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-
-body{
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-opacity: 0.8;
-background-size: 10px 10px;
-background-image: repeating-linear-gradient(45deg, #c90cb3 0, #c90cb3 1px, #000000 0, #000000 50%);
+*{
+	scroll-behavior: smooth !important;
 }
 
-.nav_logo{
-    text-align: left;
-    width: 100%;
-    padding: 2rem 4rem;
-    font-size: 45px;
-    background-color: #000;
-    color: #efefef;
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../assets/image/WhatsApp\ Image\ 2024-02-05\ at\ 1.18.49\ PM.jpeg');
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
 }
 
-.frasePrincipal{
-    text-align: left;
-    width: 100%;
-    padding: 20px;
-    font-size: 33px;
-    background-color: #000;
-    color: #efefef;
+#hero__section {
+	background-image: url('../assets/image/cover.jpg');
+	height: 75vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	color: white;
 }
 
-.items{
-    display: flex;
-    margin-right: 20px;
-    text-align: left;
-    color:#efefef;
-    justify-content: space-between;
-    text-decoration: none;
-
-
+nav {
+	margin-top: -15px;
+	width: 100%;
+	height: 100px;
 }
 
-.nav_items{
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 25px;
-    color:#efefef
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	gap: 4;
 }
 
-
-.textoMitad{
-    text-align: center;
-    width: 100%;
-    padding: 0px 100px;
-    font-size: 20px;
-    background-color: #000;
-    color: #efefef;
-    margin: 5px auto;
+li {
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
-.nav.link{
-    color: #efefef;
+li:hover {
+	transform: scale(1.1);
 }
 
-.imagen12{
-    
-    border-radius: 15px;
-    display: flex;
-    align-items: left;
-    max-width: 100%;
-    max-height: 100%;
+a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	padding: 10px 30px;
+	border-radius: 10px;
 }
 
-.itt{
-    display: flex;
-    margin-right: 20px;
-    text-align: left;
-    color:#efefef;
-    justify-content: space-between;
-    text-decoration: none;
-    font-size: 25px;
+a:hover {
+	background-color: #f1f1f1;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	color: #f1f1f1;
+}
+
+.section h2{
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+
+.element {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly
+}
+
+.description__container{
+	width: 65%;
+}
+
+.description__header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.description__header .description__title{
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: -1px
+}
+
+.description__header .description__price{
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #e39ecd;
+	font-style: italic;
+}
+
+.description__content{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.image__container{
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image__container img{
+	width: 60%;
+	object-fit: cover;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+
 }
